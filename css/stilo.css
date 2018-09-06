@@ -177,13 +177,40 @@ video {
 =========================================================== */
 
  .margin-login-all{
-  margin: 0 20%;
+  margin: 0 auto;
  }
 
- @media (max-width: 768px) {
+ @media (max-width: 2560px) and (min-width: 1441px) {
    .margin-login-all{
-   margin: 0  10%;
+   max-width:  1170px;
    }
+  }
+
+  @media (max-width: 1440px) and (min-width:  1025px) {
+    .margin-login-all{
+     width:  940px;
+   }
+   }
+
+   @media (max-width: 1024px) and (min-width:769px) {
+    .margin-login-all{
+    max-width:  748px;
+    }
+   }
+@media(min-width: 426px) and (max-width: 768px){
+    .margin-login-all{
+      max-width: 620px;
+      width: 80%;
+      padding: 0 15px;
+    }
+
+}
+
+ @media (max-width: 425px) {
+    .margin-login-all{
+      max-width: 90%;
+      padding: 0 15px;
+    }
   }
 
 /*===================================================================================
@@ -206,7 +233,7 @@ video {
 }
 .navbar-right {
     float: right!important;
-    margin-right: 109px;
+    margin-right: -38px;
 }
 
 
@@ -214,8 +241,7 @@ video {
     float: left;
     height: 50px;
     padding: 2px 2px;
-    width: 300px!important;
-    margin-left: 156px!important;
+    width: 300px;
 }
 
 .navbar-brand .nav-logo-recupera{
@@ -240,9 +266,9 @@ video {
 }
 
 .navbar-toggle {
-    padding: 0px 10px;
+    padding: 3px 10px;
     margin-top: 8px;
-    margin-right: 15px;
+    margin-right: 7px;
     margin-bottom: 8px;
 }
 
@@ -263,7 +289,8 @@ video {
 
 .navbar-default .navbar-nav>li>a {
 	text-transform: uppercase;
-    color: #fff;
+  color: #fff;
+  padding-right: 0;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -281,21 +308,9 @@ video {
 
   .navbar-right {
     float: right!important;
-    margin-right: 9px;
+    margin-right: -40px;
   }
 
-  .navbar-brand {
-    
-    margin-left: 39px!important;
-  }
-
-  .safe-area h2 {      
-    font-size: 29px !important;
-  }
-  
-  .safe-area h1 {      
-    font-size: 38px !important;
-  }
 }
 
 @media(max-width: 768px){
@@ -303,15 +318,14 @@ video {
   .navbar-brand {
       float: left;
       height: 50px;
-      padding: 2px 2px;
-      width: 190px;
-      margin-left: 28px!important;
+      padding: 6px 2px;
+      width: 230px;
   }
 
   .navbar-right {
       float: right!important;
       margin-right: -8px;
-      width: 357px;
+      width: 312px;
   }
 
   
@@ -327,6 +341,7 @@ video {
     width:38%;
     padding: 5px 0 0px 10px;
   }
+  
 }
 
 @media(max-width: 425px){
@@ -337,19 +352,21 @@ video {
   }
 
   .navbar-brand {
-    width: 220px!important;
+    width: 212px!important;
     margin-left: 0!important;
   }
 
   .navbar-brand .nav-logo-recupera{
     width: 55%;
     padding-right: 7px;
-    border-right: solid 1px #868686;
+   /*  border-right: solid 1px #868686; */
+   border-right: none;
   }
 
   .navbar-brand .nav-logo-diretrix{
-    width:42%;
-    padding: 5px 0 0px 10px;
+    /* width:42%;
+    padding: 5px 0 0px 10px; */
+    display: none;
   }
 }
 
@@ -377,9 +394,9 @@ video {
   top: 0;
 }
 .safe-area h1{
-    margin:  0 0px 15px 0px;
-    font-size: 50px;
-    float: right;
+   margin: 0 0px 15px 0px;
+   font-size: 45px;
+   text-align: center;
 }
 
 .safe-area h1 > span{
@@ -388,9 +405,9 @@ video {
 
 
 .safe-area h2{
-    float: left;
-    margin:0 0 12px 45px;
-    font-size: 37px;
+    margin:0 0 5px 0px;
+    font-size: 33px;
+    text-align: center;
 }
 
 .safe-area h3{
@@ -437,10 +454,11 @@ textarea.form-login{
   background-color: #008496;
   color: #fff;
   width: 100%;
-  height: 102px;
-  padding: 11px 21px !important;
-  margin-top: 28px !important;
+  height: auto;
+  padding: 15px 15px !important;
+  margin-top: 50px !important;
   border-radius: 1%;
+  margin-bottom: 40px;
 }
 
 .container-item-login > p.title-item{
@@ -450,73 +468,100 @@ textarea.form-login{
 }
 
 .container-item-login > p{
-  font-size: 9px!important;
+  font-size: 13px!important;
   margin: 2px 0;
 }
 
 .container-item-login > p > a{
-  font-size:10px!important;
+  font-size:13px;
   color: #fff;
 }
 
 button.btn-formLogin{
-  text-transform: uppercase;
-  padding: 7px 11px;
-  font-size: 14px;
-  font-weight: 100;
+  background-color: #002f54;
+  color: #fff;
+}
+
+button.btn-formLogin:hover{
+  background-color: #1a4465;
+  color: #fff;
 }
 
 @media(max-width: 1366px){
 
-  .container-item-login {   
+ /*  .container-item-login {   
     width: 100%;
-    height: 95px;
+    height: auto;
     padding: 10px 20px;
     margin-top: 56px;
-  }
+    margin-bottom: 40px;
+  } */
 
+ 
   .container-item-login > p {
-    font-size: 10px!important;
+    font-size: 13px;
     margin: 0;
   }
-
-  .container-item-login > p {
-    font-size: 9px!important;
-    margin: 0;
 }
-}
-
-
-@media(max-width: 1024px){
-
-  .section-login h1 {
-    margin: 0px 0 15px 0px;
-    font-size: 50px;
+@media(min-width:1441px){
+  .safe-area h1{
+    margin: 0 50px 15px 0px;
+    font-size: 70px;
+    text-align: right;
   }
 
-  .section-login h2 {
-    margin: 0 0 10px 5px;
-    font-size: 40px;
+  .safe-area h2 {
+    margin: 0 0 7px 50px;
+    font-size: 60px;
+    text-align: left;
+  }
+}
+
+@media(min-width: 1025px) and (max-width: 1440px){
+  
+  .safe-area h1{
+    margin: 0 50px 15px 0px;
+    font-size: 55px;
+    text-align: right;
+  }
+
+  .safe-area h2 {
+     margin: 0 0px 0 50px !important;
+    font-size: 45px!important;
+    text-align: left !important
+  }
+   
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+  .safe-area h1{
+    margin: 0 50px 15px 0px;
+    font-size: 45px;
+    text-align: right;
+  }
+
+  .safe-area h2 {
+     margin: 0 0px 0 50px !important;
+    font-size: 35px!important;
+    text-align: left !important
   }
    .img-container{
      position: relative;
-     bottom: -50px !important;
+     bottom: -4px !important;
      
    }
 
   
   .container-item-login {
-    padding: 10px 21px!important;
-    margin-top: 31px !important;
+    padding: 11px 21px!important;
+    margin-top: 39px !important;
     margin-bottom: 20px !important;
     border-radius: 1%;
     height: auto;
   }
-
-  .container-item-login > p {
-    font-size: 10px!important;
-    margin: 1px 0;
-  }
+  
 }
 
 @media(max-width: 993px){
@@ -526,36 +571,19 @@ button.btn-formLogin{
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
 
   .section-login h1 {
-    margin: 0 7px 20px 0px;
-    font-size: 40px;
+    font-size: 45px!important;
+    text-align: center;
   }
 
   .section-login h2 {
-    float: left;
-    margin: 0 0 15px 7px;
-    font-size: 35px;
+   
+    font-size: 34px !important;
+    text-align: center;
+    margin-right: 0;
   } 
-
-  .container-login-img{
-    display: none; 
-  }
-
-}
-
-@media (max-width: 425px) {
-  
-  .safe-area h1 {
-    margin: 0 0px 10px 0px;
-    font-size: 23px!important;
-  }
-
-  .safe-area h2 {
-    margin: 0 0 5px 0px;
-    font-size: 17px!important;
-  }
 
   .container-login-img{
     display: none; 
@@ -563,8 +591,86 @@ button.btn-formLogin{
 
   .container-item-login {
     margin: 80px 0px 40px 0;
+    padding-right: 10px;
+  }
+  
+
+  .container-item-login {
+    padding: 17px 37px!important;
+    margin-top: 40px !important;
+    margin-bottom: 50px !important;
+    border-radius: 1%;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  
+  
+  .safe-area h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+  .safe-area h2 {
+    font-size: 23px;
+    text-align: center ;
+    margin-left: 0;
+    margin-bottom: 2px;
+
+  }
+
+  .container-login-img{
+    display: none; 
+  }
+
+  .container-item-login {
+    padding: 15px 18px !important;
+  }
+
+  
+  .container-item-login > p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .container-item-login > p > a{
+    font-size: 12px;    
   }
 }
+
+@media (max-width: 374px) {
+  
+    .safe-area h1 {
+    font-size: 23px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 2px;
+  }
+
+    .safe-area h2 {
+      font-size: 17px;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 2px;
+    }
+
+  .container-item-login {
+    padding: 18px 30px !important;
+  }
+
+  .container-item-login > p {
+    font-size: 12px!important;
+    text-align: center;
+  }
+
+  .container-item-login > p > a {
+    font-size: 12px!important;
+    text-align: center;
+  }
+
+  }
 
 
  /*=========================================================
@@ -584,7 +690,10 @@ button.btn-formLogin{
  .section-produtos .produtos-img{
    display: block;
    width: 75%;
-   margin: 40px auto;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   margin-right: auto;
+   margin-left: auto;
  }
 
  .section-produtos .produtos-img img{
@@ -594,12 +703,16 @@ button.btn-formLogin{
 
  .section-produtos h1{
    font-size: 2.5em;
+   text-align: center;
+   margin-bottom: 20px;
  }
 
  .section-produtos h2{
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 22px;
  }
 
 .section-produtos h3 {
@@ -611,14 +724,15 @@ button.btn-formLogin{
  .section-produtos p{
    color: #000000;
    font-size: 1.1em;
+   text-align: center;
  }
 
 
 
  .section-produtos .panel-img{
-   display: flex;
-  justify-content:center;
-   margin:  0 auto;
+    display: flex;
+    justify-content:center;
+    margin:  0 auto;
  }
 
  
@@ -626,8 +740,18 @@ button.btn-formLogin{
    
     .section-produtos .produtos-img {
      width: 100%;
-     margin: 40px auto;
     }
+
+    .section-produtos h1{
+       font-size: 28px;
+       text-align: center;
+       margin-bottom: -10px;
+    }
+
+    .section-produtos p{
+      text-align: center;
+    }
+
  }
 
 
@@ -645,7 +769,7 @@ button.btn-formLogin{
  }
 
  .section-carousel article{
-   padding-top: 20px;
+   padding-top: 30px;
  }
 
  .section-carousel article h3{
@@ -676,12 +800,12 @@ button.btn-formLogin{
  }
 
  .img-carousel{
-   max-width:110%;
-   width: 220px;
-   padding: 15px 0;
-   display:  flex;
-   align-items:  center;
- }
+    max-width: 100%;
+    width: 216px;
+    height: inherit;
+    padding: 15px 0;
+    margin: 0 auto;
+  }
 
 
  .carousel-inner .img-carousel img{
@@ -695,8 +819,8 @@ button.btn-formLogin{
 
  .carousel-inner .content-carousel p{
    color: #000000;
-   padding: 0!important;
-   font-size: 11px;
+   padding-top: 10px!important;
+   font-size: 13px;
 
  }
 
@@ -726,6 +850,46 @@ button.btn-formLogin{
      content: '\3009'!important;
  }
 
+ @media (min-width: 1441px) {
+
+  .carousel-inner .content-carousel {
+    padding: 10px 18px;
+  }
+
+  .section-carousel article {
+      padding-top: 43px;
+  }
+
+  .carousel-inner .content-carousel p {
+    font-size: 14px;
+  }
+
+ }
+
+@media(min-width: 769px) and (max-width: 1024px){
+  .img-carousel {        
+    padding: 36px 0;
+  }
+
+
+
+  .img-carousel > img{
+   margin-top: 15px!important;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 768px){
+  .section-carousel article {
+    text-align: center;
+  }
+
+  .carousel-inner .content-carousel p {
+      color: #000000;
+      padding: 0!important;
+      font-size: 11px;
+      text-align: center;
+  }
+}
 
 
   /*=========================================================
@@ -734,24 +898,24 @@ button.btn-formLogin{
 
  .section-form{
    background-color: #ebebeb;
+   padding: 40px 0;
    width: 100%;
    min-height: 450px;
    overflow: hidden;
  }
 
  .section-form h2.text-section-form{
-   margin-top: 50px;
-   margin-bottom: 50px;
+  
+   margin-bottom: 30px;
    font-size: 40px;
    
  }
 
- button.btn-formTalk{
-   text-transform: uppercase;
+
+
+ button.btn-formTalk{   
    background-color:#008496;
    color: #fff;
-   padding:  15px 40px;
-   font-size:  13px;
  }
 
  button.btn-formTalk:hover{
@@ -765,6 +929,14 @@ button.btn-formLogin{
 
  .font-blue{
    color:  #003055!important;
+ }
+
+ @media(max-width: 425px){
+  .section-form h2.text-section-form {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
  }
  
 
@@ -807,11 +979,23 @@ button.btn-formLogin{
    padding-top: 45px;
  }
 
-  .logo-footer a img{
-  height: 580px;
-  display: inline-block;
-  background-color: #EA3939;
+ footer .text-footer{
+   display: block;
+   padding-top: 45px;
+   text-align: right;
  }
+
+ .container-footer{
+  width:  100%;
+  max-width: 320px;
+ }
+
+.logo-footer a img {
+  display: inline-block;
+  background-color: transparent;
+  float: right;
+ }
+
 
 @media(max-width: 1366px){
   footer h2 {
@@ -824,13 +1008,11 @@ button.btn-formLogin{
       font-size: 11px;
       margin: 5px 0;
   }
-
 }
  
 
- @media (max-width: 768px) {
+  @media (max-width: 768px) {
   
-
     main > footer{
      height: auto;
      display: flex;
@@ -839,8 +1021,32 @@ button.btn-formLogin{
    footer .text-footer{
      padding-top: 40px;
    }
-   
- }
+
+   .container-footer {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      display: inline-flex;
+      flex-direction: column;
+    }   
+  }
+
+  @media(max-width: 425px){
+    .logo-footer a img {
+    display: inline-block;
+    background-color: transparent;
+    padding-top: 34px;
+    float: left;
+   }  
+
+   footer .text-footer > p{
+    position: relative;
+    bottom: 0;
+    left: 0;
+     display: inline-block;
+     float: right;
+    }  
+  }
 
 
  /*==========================================================================================
@@ -1260,6 +1466,13 @@ video {
 /*==============================================================================
 -------------------- botoes e inputs e forms -----------------------------------
 =============================================================================== */
+
+.btn-login{
+  text-transform: uppercase;
+  padding:  10px 20px;
+  font-size:  16px;
+  font-weight: 100;
+}
 
 .btn {
   border-radius: 3px;
